@@ -1,0 +1,14 @@
+<h3>child component</h3>
+<div class="child">
+  <p>The parnets message is: {{ parnetMessage }}</p>
+  <br />
+  <input
+    #childInput
+    type="text"
+    placeholder="insert value"
+    (keyup)="onChange(childInput.value)"
+  />
+  <br />
+  <button (click)="onClick()">click me</button>
+  <br />
+</div>
